@@ -70,7 +70,13 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
+_Setting:_ The interaction takes place in a study room. The main focus of the interaction is focused with the person attempting to drink water from his water bottle.
+
+_Players:_ The main character in the story is the person who is studying. During middle of the story the character interacts with the second character who introduces to the solution to his problem.
+
+_Activity_: The main character is studying and wants to drink water. However, the main character usually forgets refill his water bottle. The second character introduces a solution to main character's problem.
+
+_Goals:_ The goal of main character is to refill the water on time. The goal of the second character is to introduce the solution to the main character.
 
 \*\***Include a picture of your storyboard here**\*\*
 

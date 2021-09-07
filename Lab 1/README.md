@@ -115,6 +115,8 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
+Set up just consisted of attaching phone with the water bottle and testing out tinkerbelle. [See video](https://youtu.be/lAxmj83391Y)
+
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
@@ -128,12 +130,18 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+![image](https://github.com/inkiyad/Interactive-Lab-Hub/blob/Fall2021/Lab%201/Device%20design.PNG?raw=true)
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+Since the device detects if there's enough water the sensor must be able to withstand water damage.
 
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+
+![See video](https://youtu.be/zlQ9fuJ2sSk)
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 

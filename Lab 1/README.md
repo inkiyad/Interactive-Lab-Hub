@@ -141,7 +141,7 @@ Since the device detects if there's enough water the sensor must be able to with
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
-![See video](https://youtu.be/zlQ9fuJ2sSk)
+[See video](https://youtu.be/zlQ9fuJ2sSk)
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 

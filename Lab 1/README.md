@@ -91,10 +91,12 @@ Present your idea to the other people in your breakout room. You can just get fe
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
-\*\***Are there things that seemed better on paper than acted out?**\*\*
+\*\***Are there things that seemed better on paper than acted out?**\*\* 
+
 Acting out is a bit tougher compared to the script on the paper especially with only one person. However it is possible to convey the purpose of the device to the audience.
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
 Using two different water bottles could help audience understand what is going on in the scene better.
 
 ## Part C. Prototype the device

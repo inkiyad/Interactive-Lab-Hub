@@ -159,7 +159,7 @@ This describes the second week's work for this lab activity.
 
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
-\*\***Summarize feedback from your partners here.**\*\*
+\*\***Summarize feedback from your partners here.**\*\*<br>
 Jiacheng Peng jp948 - The red and green color may confuse the users with hot and room temperature water. Instead of color scheme maybe there could be a flash of light when the bottle is empty.<br>
 Kristjan Ari Tomasson kt476 - The light staying on continuously could be distracting, a snooze feature that dims the light could be helpful.<br>
 Jay Jain uj26 - User may need to refill the bottle before it becomes completely empty, so the design should have a threshold when the bottle is about 3/4th empty.<br>

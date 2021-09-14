@@ -180,7 +180,7 @@ After collecting valuable feedback, I redesigned the possible interactions the u
 The setting and user stays the same as before, in this case, the user is working on his assignments. Since I added multiple additional features in this part of the interaction, I focused more on the features than juxtaposing “fancy” water bottle to regular water bottle. Overall, the lab was a great exercise to give a good intuition of if a device could be useful in real life than designs in paper.
 **Updated Storyboard**
 
-![image](Staging Interaction Storyboard pt2.PNG)
+![image](https://github.com/inkiyad/Interactive-Lab-Hub/blob/Fall2021/Lab%201/Staging%20Interaction%20Storyboard%20pt2.PNG?raw=true)
 
 **Updated prototype setup**
 [See video](https://youtu.be/qqhD5suEYwk)

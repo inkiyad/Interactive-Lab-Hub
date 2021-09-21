@@ -174,8 +174,6 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
-[See Video](https://youtu.be/5yxXjY4IUn0)
-
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
 
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
@@ -193,6 +191,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+**[See Video](https://youtu.be/5yxXjY4IUn0)**
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.

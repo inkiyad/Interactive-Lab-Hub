@@ -1,6 +1,5 @@
 import digitalio
 import board
-
 from adafruit_rgb_display.rgb import color565
 import adafruit_rgb_display.st7789 as st7789
 import webcolors

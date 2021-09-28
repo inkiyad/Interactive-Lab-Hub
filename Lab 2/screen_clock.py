@@ -2,10 +2,11 @@ import time
 import subprocess
 import digitalio
 import board
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 import adafruit_rgb_display.st7789 as st7789
 from adafruit_rgb_display.rgb import color565
 from time import strftime, sleep
+from datetime import datetime
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -73,7 +74,10 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+# Add a background image
 image2 = Image.open("red.jpg")
+enhancer = ImageEnhance.Brightness(image2)
+image2 = enhancer.enhance(0.1)
 # Scale the image2 to the smaller screen dimension
 image2_ratio = image2.width / image2.height
 screen_ratio = width / height
@@ -91,16 +95,83 @@ x = scaled_width // 2 - width // 2
 y = scaled_height // 2 - height // 2
 image2 = image2.crop((x, y, x + width, y + height))
 
+# Get drawing object to draw on image.
+draw2 = ImageDraw.Draw(image2)
 
+# Add season calendar
+def season(date):
+
+    date = date[:-6]
+    month = date.split(' ')[0]
+    day = int(date.split(' ')[1])
+
+    if month in ('January', 'February', 'March'):
+        season = 'Winter'
+    elif month in ('April', 'May', 'June'):
+        season = 'Spring'
+    elif month in ('July', 'August', 'September'):
+        season = 'Summer'
+    else:
+        season = 'Autumn'
+
+    if (month == 'March') and (day > 19):
+        season = 'Spring'
+    elif (month == 'June') and (day > 20):
+        season = 'Summer'
+    elif (month == 'September') and (day > 21):
+        season = 'Autumn'
+    elif (month == 'December') and (day > 20):
+        season = 'Winter'
+
+    if season == 'Spring':
+        season_day = str(abs(
+            datetime.strptime('March 19', "%B %d") - datetime.strptime(date, "%B %d")
+        ))
+    elif season == 'Summer':
+        season_day = str(abs(
+            datetime.strptime('June 20', "%B %d") - datetime.strptime(date, "%B %d")
+        ))
+    elif season == 'Autumn':
+        season_day = str(abs(
+            datetime.strptime('September 21', "%B %d") - datetime.strptime(date, "%B %d")
+        ))
+    elif season == 'Winter':
+        season_day = str(abs(
+            datetime.strptime('December 20', "%B %d") - datetime.strptime(date, "%B %d")
+        ))
+    
+    return ' '.join([season, 'Day', season_day.replace(' days, 0:00:00', '')])
+
+k = 0
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py
     day = strftime("%B %d, %Y")
+    season_date = season(day)
     t = strftime("%I:%M:%S %p")
+    if k == 0:
+        T = "/" * int(t.split(':')[0])
+    elif k == 1:
+        T = "-" * int(t.split(':')[0])
+    elif k == 2:
+        T = "\\" * int(t.split(':')[0])
+    elif k == 3:
+        T = "|" * int(t.split(':')[0])
+    elif k == 4:
+        T = "/" * int(t.split(':')[0])
+    elif k == 5:
+        T = "-" * int(t.split(':')[0])
+    elif k == 6:
+        T = "\\" * int(t.split(':')[0])
+    elif k == 7:
+        T = "|" * int(t.split(':')[0])
     cmd = 'curl -s  wttr.in/?T | head -n7 | tail -n6'
     wttr = subprocess.check_output(cmd, shell=True).decode("utf-8")
+    to_do1 = '[√] - Finish IDD Lab 2'
+    to_do2 = '[] - Finish MLE assignment'
+    to_do3 = '[] - Finish AML assignment'
     print(day, t, end="", flush=True)
     print("\r", end="", flush=True)
 
@@ -111,14 +182,20 @@ while True:
     else:
         backlight.value = True  # turn on backlight
     if buttonA.value and not buttonB.value:  # just button B pressed
-        disp.image(image2, rotation)  # show background image
         y = top
+        draw2.text((x, y), to_do1, font=font1, fill="#00FF00")
+        y += font1.getsize(to_do1)[1]
+        draw2.text((x, y), to_do2, font=font1, fill="#FF0000")
+        y += font1.getsize(to_do2)[1]
+        draw2.text((x, y), to_do3, font=font1, fill="#FF0000")
+        y += font1.getsize(to_do3)[1]
+        disp.image(image2, rotation)  # show background image
     if buttonB.value and not buttonA.value:  # just button A pressed
         y = top
-        draw.text((x, y), day, font=font1, fill="#00FF00")
-        y += font1.getsize(day)[1]
-        draw.text((x, y), t, font=font1, fill="#DFFF00")
-        y += font1.getsize(t)[1]
+        draw.text((x, y), season_date, font=font1, fill="#00FF00")
+        y += font1.getsize(season_date)[1]
+        draw.text((x, y), T, font=font1, fill="#DFFF00")
+        y += font1.getsize(T)[1]
         draw.text((x, y), wttr, font=font2, fill="#FFC300")
         y += font2.getsize(wttr)[1]
         disp.image(image, rotation)
@@ -126,4 +203,7 @@ while True:
 
 
     # Display image.
+    k += 1
+    if k > 7:
+        k = 0
     time.sleep(1)

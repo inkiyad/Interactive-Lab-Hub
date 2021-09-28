@@ -214,5 +214,20 @@ Modify the code from last week's lab to make a new visual interface for your new
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+---
+
+For the first part it was able to successfully display the date and the time. On top of that there was a weather component to it. Using the buttons users are also able to alternate between time view and image view.
+<br>
+For part 2 of the lab I decided to change a few things for my piclock. I wanted something different that we don't get to see in daily life like a seasonal date. Hence I decided to code for a date system that would keep track of the current season and what day of the season it is. For time I wanted something a bit more abstract. So for time I coded an animation that would show bars rotating per second of iteration. The number of bars come from the hour number in 12 hour clock.
+<br>
+Next for the other display, I recieved a feedback of the Cornell Tech logo was a bit out of context. To improve on that, I decided to make a to do list for display for the second button with an underlay of the Cornell Tech logo. See image below:
+
+![image](Lab2_changes.png)
+
+Overall, this was a nice first hands on experience of the interactive device design class. I enjoyed making and displaying simple clocks from my raspberry pi. For the second part I enjoyed making a date system that tracks the season and day of the season with an animation of the time. Additionally, the underlay of the Cornell Tech logo with the to do list was a nice touch to remind myself for the upcoming assignments I have to complete.
+
+Lastly, watch the video below to experience the full demo.
+
+**[See Video](https://youtu.be/LIMcuLvGoCE)**
 
 

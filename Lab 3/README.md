@@ -103,15 +103,23 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
+![image](Storyboard1.PNG)
+
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 \*\***Please describe and document your process.**\*\*
+
+This device is designed to give weather specifically temperature information to the user depending on the location input. So, for the dialogue I asked the user to ask about temperature information regarding a location and time. As the device, I wrote down the script I would use to respond to user's input prompts. For example, the standard reply to user would be "Where are you going?", "Today's temperature at X location is Y degree highest and lowest is Z degree."
 
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
+![video](Gazi Lab 3 Recording.mp4)
+
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
+The dialogue was roughly similar to what I expected it to be. However, I realized users may ask questions differently and the device must be able to distinguish what was being asked despite the differences. Also, it is tougher to act out exactly how a device would response as a person since there are emotions being displayed from the person who is pretending to be a computer.
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!

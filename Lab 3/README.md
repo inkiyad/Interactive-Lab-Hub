@@ -115,7 +115,7 @@ This device is designed to give weather specifically temperature information to 
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
-![](Gazi Lab 3 Recording.mov)
+[Watch Here](https://youtu.be/2Ng8S3fJtBI)
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 

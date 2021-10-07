@@ -147,6 +147,7 @@ Laurin Alexis Tran - "Definitely a useful device! I personally use an Amazon Ale
 <br>
 <br>
 **Potential Ways to Improve**
+<br>
 I like Magdalena's input that adding a calendar component could keep in track of the travel days and what type of weather we should expect coming up. Combining that with Laurin's idea that Pi giving input on what type of clothing we should wear to prevent any unwanted surprises like stormy, cold or hot weather. Additionally I am looking forward to implement more conversational phrases such as greeting each other and saying thank you, to make the interaction with the device as humanely as possible.
 
 ## Prototype your system

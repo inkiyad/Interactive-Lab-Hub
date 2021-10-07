@@ -136,6 +136,17 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
+**Peer Review**
+<br>
+Magdalena Yin Horowitz - "I really love this idea! It makes it so much easier to check the weather while you're getting dressed, making coffee, etc. The speech interaction is a great way to make up and is super interactive.
+Maybe you can integrate it with your calendar so it knows you are traveling to Long Island in the next couple of days.."
+
+<br>
+Laurin Alexis Tran - "Definitely a useful device! I personally use an Amazon Alexa to do the same thing when I'm lying in bed trying to figure out what to wear while being too lazy to pick up my phone to look up the weather. Maybe an iteration could be suggestions on how warmly to dress? I think your storyboard and video are very straightforward and clear. However, one thing that is a bit unclear is why the pi says "today is a bit chilly" before saying the temperatures for the first question and not the second, although this is a very minute detail. I also think it is interesting how you have the user and Pi use conversational phrases such as greeting each other and saying thank you."
+
+**Potential Ways to Improve**
+I like Magdalena's input that adding a calendar component could keep in track of the travel days and what type of weather we should expect coming up. Combining that with Laurin's idea that Pi giving input on what type of clothing we should wear to prevent any unwanted surprises like stormy, cold or hot weather. Additionally I am looking forward to implement more conversational phrases such as greeting each other and saying thank you, to make the interaction with the device as humanely as possible.
+
 ## Prototype your system
 
 The system should:

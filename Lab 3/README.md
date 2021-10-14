@@ -142,7 +142,7 @@ Adding a feature that identifies physical presence could improve on interactions
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
-![image](storyboard_lab3.png)
+![image](storyboard_lab3.PNG)
 
 **Peer Review**
 <br>
@@ -184,7 +184,7 @@ Users would simply touch the device where the IR sensor would signal the system 
 
 *Include videos or screencaptures of both the system and the controller.*
 
-![image](prototype_lab3.png)
+![image](prototype_lab3.PNG)
 
 **Interaction Demo:**
 <br>[Watch here](https://youtu.be/tI52LaNvtJg)

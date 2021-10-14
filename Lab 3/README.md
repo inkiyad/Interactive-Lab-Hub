@@ -182,7 +182,7 @@ Users would simply touch the device where the IR sensor would signal the system 
 
 *Include videos or screencaptures of both the system and the controller.*
 
-Interaction Demo:
+**Interaction Demo:**
 <br>[Watch here](https://youtu.be/tI52LaNvtJg)
 
 ## Test the system

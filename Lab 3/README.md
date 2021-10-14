@@ -142,6 +142,8 @@ Adding a feature that identifies physical presence could improve on interactions
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
+![image](storyboard_lab3.jpeg)
+
 **Peer Review**
 <br>
 <br>
@@ -181,6 +183,8 @@ Material's and software tools used:
 Users would simply touch the device where the IR sensor would signal the system to ask the user "What's up?" or "How can I help?" from the speaker. Once the device greets, it listens for user's input from the USB microphone. The input voice then gets recorded and read by python's [SpeechRecognizer](https://pypi.org/project/SpeechRecognition/) package. For this prototype, I allowed the users to ask about current, and future weather forecasts at a specific location. The data is fetched from [wttr.in](http://wttr.in) using cURL function, once the users ask about the weather at a specific location. Also, the system can forecast up to 2 days in the future. This part is fully automated and can be easily implemented with more locations than what was listed. Additionally, the user could ask what's on their calendar and the system would be able to look at future events and give the user a heads up on what weather to expect and what should the user wear and bring with them. 
 
 *Include videos or screencaptures of both the system and the controller.*
+
+![image](prototype_lab3.jpeg)
 
 **Interaction Demo:**
 <br>[Watch here](https://youtu.be/tI52LaNvtJg)

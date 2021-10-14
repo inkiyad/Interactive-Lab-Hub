@@ -133,7 +133,13 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
+Asking small questions would avoid complexity of the system. The longer an input answer the harder it would be for the system to distinguish what is being asked. Also focusing on keywords could take down a lot of complexity as well. This way if an user talks a lot, the keywords would guide the system to the right topic of discussion. 
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+
+Adding a feature that identifies physical presence could improve on interactions. For instance, if an user comes within a certain range, the device could activate and ask the user a question on how the device could help.
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
 **Peer Review**
@@ -159,7 +165,25 @@ The system should:
 
 *Document how the system works*
 
+Drawing inspiration from our daily interactions with weather I wanted to create a device that would directly inform users with weather news. Although many weather news and apps exists, we are constantly in a rush and sometimes we don't get to look over the weather. To solve that problem I designed a device which is quick and simple to use. 
+
+Material's and software tools used:
+<br>
+- Python's [SpeechRecognizer](https://pypi.org/project/SpeechRecognition/)
+- RaspberryPi
+- USB mini microphone
+- Soft cardboard
+- APDS-9960 (IR Sensor)
+- Adafruit Mini PiTFT
+- HD Webcam and Speaker
+
+<br>
+Users would simply touch the device where the IR sensor would signal the system to ask the user "What's up?" or "How can I help?" from the speaker. Once the device greets, it listens for user's input from the USB microphone. The input voice then gets recorded and read by python's [SpeechRecognizer](https://pypi.org/project/SpeechRecognition/) package. For this prototype, I allowed the users to ask about current, and future weather forecasts at a specific location. The data is fetched from [wttr.in](http://wttr.in) using cURL function, once the users ask about the weather at a specific location. Also, the system can forecast up to 2 days in the future. This part is fully automated and can be easily implemented with more locations than what was listed. Additionally, the user could ask what's on their calendar and the system would be able to look at future events and give the user a heads up on what weather to expect and what should the user wear and bring with them. 
+
 *Include videos or screencaptures of both the system and the controller.*
+
+Interaction Demo:
+<br>[Watch here](https://youtu.be/tI52LaNvtJg)
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
@@ -167,18 +191,19 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+<br>
+The system worked well for speech recognition. Python's speech recognition package was able to distinguish users' speech and convert them into text which was used as an input to the system. Additionally, the system would parse on keywords such as 'weather', 'calendar', 'today', 'tomorrow', 'New York' and other locations pretty well which helped to create a streamline process. Additionally, collecting weather information from online was pretty efficient as well. Displaying the information on Mini PiTFT was a bonus touch for users to visually interact with the information. Although the system is working as intended it also has limited capacity in terms of delivering information to the users. For example, users had limited amount of control when it came to modifying the events.
 
 ### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
+<br>
+The controller had a simple functionality for this system. The cardboard to hide the sensors added a nice touch, also the sensor was able to pick up signals based on simple touch. Also with the cardboard being soft the users didn't have to press too hard to initialize the system. However since the sensor wasn't placed at a fixed location, users had to touch on different area to activate the system. The touch here region helped to locate the sensor a bit.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
+<br>
+People tend to talk more naturally and has a lot of redudant information in their speech usually. There could be ways you identify the keywords the user is talking about by implementing more of an NLP approach. Also instead of using touch sensing to activate the system, there could be a visual sensing tool to initiate the interaction. For instance, using computer vision tool, the system could recognize there is an user in front of it. This way it would be more natural because the users won't have to physically do anything to work with the device.
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-
-\*\**your answer here*\*\*
+<br>
+I would use my system to create a dataset of interaction by collecting the time of the questions as well as the locations being covered. Additionally the frequency of question would also be a great indicator of how active a person is since you have to go out prepared. I think adding a temperature sensor would be a great addition as well. This way the system would be able to understand user's room temperature and compare it with outside temperature to give a better feeedback in terms of what to expect if they were to go outside. 
 

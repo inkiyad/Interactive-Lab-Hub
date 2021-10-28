@@ -156,7 +156,7 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joyst
 
 Note: We did not distribute this sensor to you, so if you are interested in playing with it, please come pick it up from the TA!
 
-Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25Â° and is able to detect objects up to 3 meters away! 
+Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25Ã‚Â° and is able to detect objects up to 3 meters away! 
 
 <p float="left">
 <img src="https://cdn.sparkfun.com//assets/parts/1/6/0/3/4/17072-Qwiic_Multi_Distance_Sensor_-_VL53L3CX-01.jpg" height="200" />
@@ -258,6 +258,12 @@ Build a cardboard prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+![Part 1 Prototype](Part1-Prototype.PNG)
+
+The image shows where the buttons, the screen, the speaker, the LEDs, and the sensor will be put on the device.  The flap, as shown in the video below, can be adjusted, with the hope of placing the sensor in the optimal position for the light source.
+
+[Part 1 Prototype Video](https://youtu.be/n37qv1yvxTY)
+
 
 LAB PART 2
 
@@ -298,7 +304,33 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
 
+**Feedback Recieved:**
+"Great job! I love that you can get a sounded alarm to wake up with the sun, just like a morning rooster. I would love if the ambient light sensor increased the light in the room based on very small fluctuations / increases in ambient light, since some rooms are not facing the sun, but receive residual sunlight. This way, the user can get the benefit of the "sun" shining through the window when it really isn't." - Joseph Cera
+
+"I particularly like your designs that ease up people's lives and improve efficiency in part C. For your prototype in part D, I think it would be nice if the user can adjust the light intensity threshold." - Hongyu Shen
+
+"Look forward to your prototype. It would be better if you integrate the buttons and switches into the prototype instead of drawing them out." - Yixuan Li
+
+**Iteration**
+Based on the feedback we received, we decided to incorporate a joystick to control the threshold of the light that triggers the alarm. This way the device won't buzz off when there are some ambient lighting. Also, we moved the screen location from the front of the device to the side of the device, for ease of use and the feasibility of the device. This way the user could look at the device from the side while the device collects light signal from the front.
+
+
+
+Figure: New Design Sketch
+![New Prototype sketch](PartF-NewPrototypeSketch.PNG)
+
+
+Figure: New Prototype
+![Real Life Prototype](PartF-Prototype.jpg)
+
+
+
+**Video Interactions**
+[**Here's How the Device Looks**](https://youtu.be/WwxULTpmAL4)
+
+
+[**Here's How the Device Works**](https://youtu.be/RTnMSuA5ABI)
+
+
+[**Here's How the Device Acts**](https://youtu.be/GK-S0tjX0-I)

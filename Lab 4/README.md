@@ -108,6 +108,8 @@ We here want you to get to know this awesome sensor [Adafruit APDS-9960](https:/
 Connect it to your pi with Qwiic connector and try running the 3 example scripts individually to see what the sensor is capable of doing!
 
 ```
+(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python light_test.py
+...
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python proximity_test.py
 ...
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python gesture_test.py
